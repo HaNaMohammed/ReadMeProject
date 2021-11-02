@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Read Me</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Fonts -->
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="css/animate.css" rel="stylesheet" />
+  <!-- Squad theme CSS -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="color/default.css" rel="stylesheet">
+  
+  
+  <script>
+function validateForm() {
+  var pass = document.forms["SignUpForm"]["password"].value;
+  var confirm = document.forms["SignUpForm"]["Confirmpassword"].value;
+  if (pass == "" || confirm == "") {
+    alert("Faild");
+    return false;
+  }
+  if(confirm==pass)
+  {
+       alert("Success");
+	   return true;
+	   }
+ else
+   {
+    alert("Faild");
+    return false;
+   } 
+	   
+  
+}
+</script>
+  
+  
+  
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+ 
+
+  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+        <a class="navbar-brand" href="index.html">
+          <h1>Read Me</h1>
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#intro">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+		 <li><a href="Login_v6\index.html">Admin</a></li>
+
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+
+  <!-- Section: intro -->
+  <section id="intro" class="intro">
+
+    <div class="slogan">
+      <h2>WELCOME TO <span class="text_color">Read Me</span> </h2>
+      <h4>We provide to you a fantastic collection of different types of books</h4>
+    </div>
+    <div class="page-scroll">
+      <a href="#about" class="btn btn-circle">
+				<i class="fa fa-angle-double-down animated"></i>
+			</a>
+    </div>
+  </section>
+  <!-- /Section: intro -->
+
+  <!-- Section: about -->
+  <section id="about" class="home-section text-center">
+    <div class="heading-about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="wow bounceInDown" data-wow-delay="0.4s">
+              <div class="section-heading">
+                <h2>About us</h2>
+                <i class="fa fa-2x fa-angle-down"></i>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-2 col-lg-offset-5">
+          <hr class="marginbot-50">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="wow bounceInUp" data-wow-delay="1s">
+		  <div class="team boxed-grey">
+			  <div class="inner" >
+					<h5>OUR PHILOSOPHY  </h5>
+					<p class="subtitle"> <b>Some people like to read on a screen. 
+					They love taking them along when they leave the house, and stacking them by their bedsides. 
+					They love finding old letters and bookmarks in them.
+					They want to read in a way that offers a rich experience, more than the words only.
+					These are the people we're working for.</b></p>
+			 
+			  </div>
+      
+            </div>
+          </div>
+        </div>
+       
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Section: about -->
+
+  <!-- Section: contact -->
+  <section id="contact" class="home-section text-center">
+    <div class="heading-contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="wow bounceInDown" data-wow-delay="0.4s">
+              <div class="section-heading">
+                <h2>Get in touch</h2>
+                <i class="fa fa-2x fa-angle-down"></i>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-2 col-lg-offset-5">
+          <hr class="marginbot-50">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="boxed-grey">
+
+            <div id="sendmessage">Your have been signed up successfully. Thank you!</div>
+            <div id="errormessage"></div>
+            <form name="SignUpForm" id="contact-form" action="SignUp.php"  onsubmit="return validateForm()"method="post" role="form" class="contactForm">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="name">
+                                Name</label>
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validation"></div>
+                  </div>
+				  <div class="form-group">
+                    <label for=" User Name">
+                                User Name</label>
+                    <input type="text" name=" UserName" class="form-control" id="Username" placeholder="Your User Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">
+                                Email Address</label>
+                    <div class="form-group">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                      <div class="validation"></div>
+                    </div>
+                  </div>
+				  
+                 
+                </div>
+                <div class="col-md-6">
+				<div class="form-group">
+                    <label for="password">
+                                password</label>
+                    <input type="password" class="form-control" name="password" id="password" placeholder="password" data-rule="minlen:4" data-msg="Please enter at least 8 chars of password" />
+                    <div class="validation"></div>
+                  </div>
+				 <div class="form-group">
+                    <label for="password">
+                                Confirm password</label>
+                    <input type="password" class="form-control" name="Confirmpassword" id="Confirmpassword" placeholder="Confirm password" data-rule="minlen:4" data-msg="Please enter valid password" />
+                    <div class="validation"></div>
+                  </div>
+				   
+				  
+				  
+                </div>
+
+                <div class="col-md-12">
+                  <button type="submit" class="btn btn-skin pull-right" id="btnContactUs">
+                            Sign Up</button>
+                </div>
+
+              </div>
+            </form>
+			
+          </div>
+        </div>
+
+
+      </div>
+	      <div class="row">
+        <div class="col-lg-8">
+          <div class="boxed-grey">
+
+            <div id="sendmessage">Your have been loged in successfully. Thank you!</div>
+         <div id="errormessage"></div>
+          
+			<form id="contact-login"  action="LogIN.php" method="POST" role="form" class="contactForm">
+              <div class="row">
+                <div class="col-md-6">
+                
+                  <div class="form-group">
+                    <label for="email">
+                                Email Address</label>
+                    <div class="form-group">
+                      <input type="email" class="form-control" name="emaill" id="emaill" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                      <div class="validation"></div>
+                    </div>
+                  </div>
+				  
+                 
+                </div>
+                <div class="col-md-6">
+				<div class="form-group">
+                    <label for="password">
+                                password</label>
+                    <input type="password" class="form-control" name="passwordd" id="passwordd" placeholder="password" data-rule="minlen:4" data-msg="Please enter at least 8 chars of password" />
+                    <div class="validation"></div>
+                  </div>
+				  
+                </div>
+
+                <div class="col-md-12">
+						         <input name="submit1" type="submit" class="btn btn-skin pull-right" id="btnContactUs"  value="LogIN">
+
+                </div>
+
+              </div>
+            </form>
+	
+          </div>
+
+    </div>
+  </section>
+  <!-- /Section: contact -->
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-lg-12">
+          <div class="wow shake" data-wow-delay="0.4s">
+            <div class="page-scroll marginbot-30">
+              <a href="#intro" id="totop" class="btn btn-circle">
+							<i class="fa fa-angle-double-up animated"></i>
+						</a>
+            </div>
+          </div>
+          <p>&copy;Yomna Yamana Hanaa.</p>
+          <div class="credits">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core JavaScript Files -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/jquery.scrollTo.js"></script>
+  <script src="js/wow.min.js"></script>
+  <!-- Custom Theme JavaScript -->
+  <script src="js/custom.js"></script>
+
+</body>
+
+</html>

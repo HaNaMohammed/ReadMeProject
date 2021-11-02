@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Insert</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Fonts -->
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="css/animate.css" rel="stylesheet" />
+  <!-- Squad theme CSS -->
+  <link href="css/insert.css" rel="stylesheet">
+  <link href="color/default.css" rel="stylesheet">
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+<!-- Section: contact -->
+  <section id="contact" class="home-section text-center">
+    <div class="heading-contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="wow bounceInDown" data-wow-delay="0.4s">
+              <div class="section-heading">
+                <h2>Insert Book</h2>
+                <i class="fa fa-2x fa-angle-down"></i>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+
+
+	    <!-- /Section: inserte -->
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="boxed-grey">
+
+            <div id="sendmessage">Inserted successfully. Thank you!</div>
+            <div id="errormessage"></div>
+            <form id="contact-form" action="Insert_ok.php" method="post" role="form" class="contactForm"  >
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="Book Name">
+                                Book Name</label>
+                    <input type="text" name="BookName" class="form-control" id="BookName" placeholder="Book Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group">
+                    <label for="Book Category">
+                                Book Category</label>
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="BookCategory" id="BookCategory" placeholder="Book Category" data-rule="minlen:4"  />
+                      <div class="validation"></div>
+                    </div>
+					
+					 <div class="form-group">
+                    <label for="Book Link">
+                                Book Link</label>
+                    <input type="text" name="BookLink" class="form-control" id="BookLink" placeholder="Book Link" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validation"></div>
+                  </div>
+				  <div class="form-group">
+                    <label for="Book's Image Link">
+                               Book's Image Link</label>
+                    <input type="text" name="ImageLink" class="form-control" id="ImageLink" placeholder="Author Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validation"></div>
+                  </div>
+				  
+					 <div class="form-group">
+                    <label for="Author Name">
+                                Author Name</label>
+                    <input type="text" name="AuthorName" class="form-control" id="AuthorName" placeholder="Author Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validation"></div>
+                  </div>
+				  
+                  </div>
+				  
+                 <div class="col-md-12">
+                  <button type="submit" class="btn btn-skin pull-right" id="btnContactUs">
+                            Insert </button>
+                </div>
+                </div>
+
+
+                
+
+              </div>
+            </form>
+			
+          </div>
+        </div>
+
+
+      </div>
+  <!-- /Section: inserte -->
+  </section>
+  <!-- /Section: contact -->
+  
+  <!-- Core JavaScript Files -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/jquery.scrollTo.js"></script>
+  <script src="js/wow.min.js"></script>
+  <!-- Custom Theme JavaScript -->
+  <script src="js/custom.js"></script>
+  <script src="contactform/contactform.js"></script>
+
+</body>
+
+</html>
